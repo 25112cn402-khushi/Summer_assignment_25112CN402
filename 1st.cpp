@@ -1,4 +1,5 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <cmath>
 using namespace std;
 int main(){
@@ -22,5 +23,24 @@ int main(){
     if(i==s){
         cout<<i<<" is armstrong number\n";}
 }
+=======
+using namespace std;
+int main(){
+    int num,count=0,i;
+    cout<<"ENTER NUMBER:";
+    cin>>num;
+
+    for(i=1;i<=num;i++){
+        if(num%i==0){
+            count++;
+        }
+    }
+    if(count==2){
+        cout<<"ITS PRIME NUMBER";
+    }
+    else{
+        cout<<"ITS COMPOSITE NUMBER";
+    }
+>>>>>>> bad85ad8dacddf8f338d8d0794aa8fca8b11375d
     return 0;
 }

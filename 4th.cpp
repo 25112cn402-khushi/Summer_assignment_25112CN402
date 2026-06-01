@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
+<<<<<<< HEAD
     int num,i,count=0,max=0,prime;
     cout<<"ENTER NUMBER:";
     cin>>num;
@@ -22,4 +23,20 @@ int main(){
     }
     cout<<max;
     return 0;
+=======
+    int num1,num2,i,hcf,lcm;
+    cout<<"ENTER 2 NUMBERS:";
+    cin>>num1;
+    cin>>num2;
+
+    for(i=1;i<=num1 && i<=num2;i++){
+        if(num1%i==0 && num2%i==0){
+            hcf=i;
+        }
+    }
+    lcm=(num1*num2)/hcf;
+    cout<<"LCM OF "<<num1<<" AND "<<num2<<" IS "<<lcm;
+    return 0;
+    
+>>>>>>> bad85ad8dacddf8f338d8d0794aa8fca8b11375d
 }
