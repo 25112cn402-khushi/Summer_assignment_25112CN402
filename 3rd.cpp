@@ -1,30 +1,17 @@
 #include <iostream>
 using namespace std;
+int sumofdigits(int num){
+    if(num==0){
+        return 0;}
+    else{
+        return num%10+ sumofdigits(num/10);}
+}
 int main(){
-<<<<<<< HEAD
-    int num,i;
+    int num,sum;
     cout<<"ENTER NUMBER:";
     cin>>num;
 
-    for(i=1;i<=num;i++){
-        if(num%i==0){
-            cout<<"FACTORS OF NUMBER :"<<i<<"\n";
-        }
-    }
+    sum=sumofdigits(num);
+    cout<<sum<<"is sum of digits";
     return 0;
-=======
-    int num1,num2,i,hcf;
-    cout<<"ENTER 2 NUMBERS:";
-    cin>>num1;
-    cin>>num2;
-
-    for(i=1;i<=num1 && i<=num2;i++){
-        if(num1%i==0 && num2%i==0){
-            hcf=i;
-        }
-    }
-    cout<<"HCF OF "<<num1<<" AND "<<num2<<" IS "<<hcf;
-    return 0;
-    
->>>>>>> bad85ad8dacddf8f338d8d0794aa8fca8b11375d
 }
