@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
+<<<<<<< HEAD
     int num,i,count=0,max=0,prime;
     cout<<"ENTER NUMBER:";
     cin>>num;

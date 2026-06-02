@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
+<<<<<<< HEAD
     int num,dupl, i,s,fact,r;
     cout<<"ENTER NUMBER:";
     cin>>num;
