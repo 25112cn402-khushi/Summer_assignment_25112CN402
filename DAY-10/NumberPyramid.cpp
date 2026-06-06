@@ -35,8 +35,8 @@ int main(){
         for(k=1;k<=num2;k++){
           //printing prnt2 value
             cout<<prnt2;
-          //increasing prnt2 by 1 at every column of each row
-            prnt2++;
+          //decreasing prnt2 by 1 at every column of each row
+            prnt2--;
         }
         //decreasing spc by 1
         spc--;
