@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main(){
+    //counting frequency of each string
+    vector <int> frequency(26,0);
+   //initialising required string
+    string str;
+    string result;
+
+  //input for string
+    cout<<"ENTER STRING:";
+    cin>>str;
+
+//counting frequency of each character in different array
+    for(char c:str){
+        frequency[c-'a']++;
+    }
+//loop for each character 
+
+    for(int i=0;i<26;i++){
+
+      //character present in string
+        if(frequency[i]>0){
+
+          //then making number of frequency into string
+            int digit=frequency[i];
+            string text_digit=to_string(digit);
+
+          //by concatenation will will add character with its frequency in result string
+            result+=i+97;
+            result+=text_digit;
+        }
+    }
+//printing result string
+    cout<<result<<" is compressed string";
+    return 0;
+}
